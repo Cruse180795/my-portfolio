@@ -1,15 +1,22 @@
+import Footer from "./components/layout/Footer";
 
 
+
+
+const githubLink = "";
+const linkedinLink = "";
 
 function App() {
   return (
-    <>
-      <h1 className="text-5xl">
-        Test
-      </h1>
+    <div className="flex flex-col min-h-screen">
 
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati dolores nihil quidem ratione atque expedita fugit! Cumque velit dignissimos esse.</p>
-    </>
+
+      <main className="flex-1">
+
+      </main>
+
+      <Footer githubLink={githubLink} linkedinLink={linkedinLink} />
+    </div>
 
 
 
