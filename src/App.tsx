@@ -1,3 +1,4 @@
+import ContactMeSection from "./components/sections/ContactMeSection";
 import Footer from "./components/layout/Footer";
 
 
@@ -12,7 +13,7 @@ function App() {
 
 
       <main className="flex-1">
-
+        <ContactMeSection />
       </main>
 
       <Footer githubLink={githubLink} linkedinLink={linkedinLink} />
