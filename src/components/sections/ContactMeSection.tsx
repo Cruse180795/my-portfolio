@@ -20,8 +20,8 @@ function ContactMeSection({ mailto }: ContactMeProps) {
 
           {/** Section Header */}
           <header className="text-center space-y-2 lg:text-left">
-            <h2 className="uppercase text-2xl">Let's <span className="text-primary">work together</span></h2>
-            <p className="leading-relaxed  text-pretty">I'm available for freelance projects or hire. Get in touch and let's create something great.</p>
+            <h2 className="uppercase text-2xl lg:text-3xl">Let's <span className="text-primary">work together</span></h2>
+            <p className="leading-relaxed text-pretty lg:text-lg ">I'm available for freelance projects or hire. Get in touch and let's create something great.</p>
           </header>
 
           {/** Email and Response Time Wrapper */}
