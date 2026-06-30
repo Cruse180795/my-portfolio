@@ -12,7 +12,7 @@ function ContactMeSection({ mailto }: ContactMeProps) {
     <section className="bg-base-200 text-base-content px-4 py-8">
 
       {/** container */}
-      <div className="lg:container lg:mx-auto outline-2 outline-red-400">
+      <div className="lg:container lg:mx-auto">
 
 
         {/** Grid */}
