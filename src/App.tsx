@@ -1,3 +1,5 @@
+
+import Navigation from "./components/layout/Navigation";
 import ContactMeSection from "./components/sections/ContactMeSection";
 import Footer from "./components/layout/Footer";
 
@@ -11,7 +13,7 @@ const mailtoLink = "ryancruse1807@hotmail.com";
 function App() {
   return (
     <div className="flex flex-col min-h-screen">
-
+      <Navigation />
 
       <main className="flex-1">
         <ContactMeSection mailto={mailtoLink}/>
