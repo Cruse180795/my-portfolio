@@ -33,12 +33,12 @@ function ContactMeSection({ mailto }: ContactMeProps) {
 
               <div className="flex items-center gap-x-4">
                 <div className="rounded-badge p-2 bg-primary/20 text-primary transition-all ease-in-out duration-500 group-hover:text-accent group-hover:bg-accent/20">
-                  <ContactSectionIcon className="size-5 lg:size-6 " />
+                  <ContactSectionIcon className="size-5" />
                 </div>
 
                 <div>
                   <p className="text-sm lg:text-base">Send an email</p>
-                  <small className="text-neutral-content lg:text-sm">
+                  <small className="text-neutral-content">
                     ryancruse1807@hotmail.com
                   </small>
                 </div>
@@ -46,7 +46,7 @@ function ContactMeSection({ mailto }: ContactMeProps) {
 
 
               <div className="text-primary transition-all ease-in-out duration-500 group-hover:text-accent">
-                <RightArrowIcon className="size-4 lg:size-5" />
+                <RightArrowIcon className="size-4 " />
               </div>
             </a>
 
@@ -55,12 +55,12 @@ function ContactMeSection({ mailto }: ContactMeProps) {
             {/** Response time */}
             <div className="border-2 border-l-4 border-l-secondary border-secondary/30 bg-base-100 rounded-card flex items-center gap-x-4 p-2">
               <div className="rounded-badge p-2 bg-primary/5 text-secondary">
-                <TimerIcon className="size-5 lg:size-6" />
+                <TimerIcon className="size-5" />
               </div>
 
               <div className="">
                 <p className="text-sm lg:text-base">Response time</p>
-                <small className="text-neutral-content lg:text-sm">
+                <small className="text-neutral-content">
                   I typically reply within 24 hours
                 </small>
               </div>
