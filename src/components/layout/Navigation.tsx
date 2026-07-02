@@ -17,9 +17,9 @@ type NavigationProps = {
 
 function Navigation({githubLink, linkedinLink}: NavigationProps) {
   return (
-    <nav className="bg-base-300 text-base-content border-b-base-100 border-b p-4 ">
+    <nav className="bg-base-300 text-base-content border-b-base-100 border-b ">
       {/** container */}
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between px-4 py-4 md:px-8 lg:px-12 max-w-7xl mx-auto">
         {/** Brand */}
         <h1 className="text-3xl underline underline-offset-8 decoration-0 decoration-primary lg:text-4xl">Ryan Cruse</h1>
 

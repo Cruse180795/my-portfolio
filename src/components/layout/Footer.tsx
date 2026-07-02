@@ -8,10 +8,10 @@ type FooterProps = {
 
 function Footer({githubLink, linkedinLink}: FooterProps) {
   return (
-    <footer className="bg-base-300 text-base-content text-center p-4">
+    <footer className="bg-base-300 text-base-content text-center">
 
       {/** container */}
-      <div className=" lg:container lg:mx-auto">
+      <div className="px-4 py-4 md:px-8 lg:px-12 max-w-7xl mx-auto">
 
         {/** flex */}
         <div className="space-y-2.5 lg:flex items-center justify-between lg:space-y-0">

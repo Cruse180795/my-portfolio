@@ -9,10 +9,10 @@ type ContactMeProps = {
 
 function ContactMeSection({ mailto }: ContactMeProps) {
   return (
-    <section className="bg-base-200 text-base-content px-4 py-8">
+    <section className="bg-base-200 text-base-content">
 
       {/** container */}
-      <div className="lg:container lg:mx-auto">
+      <div className="px-4 py-8 md:px-8 lg:px-12 max-w-7xl mx-auto">
 
 
         {/** Grid */}
