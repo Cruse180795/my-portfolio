@@ -24,23 +24,27 @@ function Footer({githubLink, linkedinLink}: FooterProps) {
               <p className="text-xs text-base-content/70">Built with React & TailwindCSS</p>
             </div>
 
-            {/** Secondary contact paths */}
-            <div className="flex items-center justify-center gap-x-2 lg:justify-start">
-              <a href={githubLink} className="p-1.5 rounded-lg bg-github text-white" target="_blank">
-                <GithubIcon className="size-5"/>
-              </a>
-              <a href={linkedinLink} className="p-1.5 rounded-lg bg-linkedin text-white" target="_blank">
-                <LinkedinIcon className="size-5"/>
-              </a>
-            </div>
+
           </div>
 
 
 
           <hr className="border-accent lg:hidden" />
 
-          {/** Legal boilerplate */}
-          <p className="text-xs text-base-content/70">© 2026 Ryan Cruse. All rights reserved.</p>
+          <div className="flex flex-col items-center gap-y-2.5 lg:flex-row lg:gap-y-0 lg:gap-x-2">
+            {/** Legal boilerplate */}
+            <p className="text-xs text-base-content/70">© 2026 Ryan Cruse. All rights reserved.</p>
+            {/** Secondary contact paths */}
+            <div className="flex items-center gap-x-2">
+              <a href={githubLink} className="p-1.5 rounded-button bg-github text-white border-2 border-github transition-all ease-in-out duration-500 hover:-translate-y-0.5" target="_blank" rel="noopener noreferrer">
+                <GithubIcon className="size-5"/>
+              </a>
+              <a href={linkedinLink} className="p-1.5 rounded-button bg-linkedin text-white border-2 border-linkedin transition-all ease-in-out duration-500 hover:-translate-y-0.5" target="_blank" rel="noopener noreferrer">
+                <LinkedinIcon className="size-5"/>
+              </a>
+            </div>
+          </div>
+
         </div>
         </div>
 
