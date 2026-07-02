@@ -29,10 +29,10 @@ function ContactMeSection({ mailto }: ContactMeProps) {
             {/** Email */}
             <a
               href={`mailto:${mailto}`}
-              className="group border-2 border-l-4 border-l-primary border-primary/30 bg-base-100 rounded-lg flex items-center justify-between p-2 transition-all ease-in-out duration-500 hover:border-accent">
+              className="group border-2 border-l-4 border-l-primary border-primary/30 bg-base-100 rounded-card flex items-center justify-between p-2 transition-all ease-in-out duration-500 hover:border-accent">
 
               <div className="flex items-center gap-x-4">
-                <div className="rounded-md p-2 bg-primary/20 text-primary transition-all ease-in-out duration-500 group-hover:text-accent group-hover:bg-accent/20">
+                <div className="rounded-badge p-2 bg-primary/20 text-primary transition-all ease-in-out duration-500 group-hover:text-accent group-hover:bg-accent/20">
                   <ContactSectionIcon className="size-5 lg:size-6 " />
                 </div>
 
@@ -53,8 +53,8 @@ function ContactMeSection({ mailto }: ContactMeProps) {
             <hr className="border-t-0 border-accent border"/>
 
             {/** Response time */}
-            <div className="border-2 border-l-4 border-l-secondary border-secondary/30 bg-base-100 rounded-lg flex items-center gap-x-4 p-2">
-              <div className="rounded-md p-2 bg-primary/5 text-secondary">
+            <div className="border-2 border-l-4 border-l-secondary border-secondary/30 bg-base-100 rounded-card flex items-center gap-x-4 p-2">
+              <div className="rounded-badge p-2 bg-primary/5 text-secondary">
                 <TimerIcon className="size-5 lg:size-6" />
               </div>
 
