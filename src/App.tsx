@@ -6,8 +6,8 @@ import Footer from "./components/layout/Footer";
 
 
 
-const githubLink = "";
-const linkedinLink = "";
+const githubLink = "https://github.com/Cruse180795";
+const linkedinLink = "https://www.linkedin.com/in/ryancruse1807/";
 const mailtoLink = "ryancruse1807@hotmail.com";
 
 function App() {
