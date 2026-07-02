@@ -13,7 +13,7 @@ const mailtoLink = "ryancruse1807@hotmail.com";
 function App() {
   return (
     <div className="flex flex-col min-h-screen">
-      <Navigation />
+      <Navigation githubLink={githubLink} linkedinLink={linkedinLink} />
 
       <main className="flex-1">
         <ContactMeSection mailto={mailtoLink}/>
