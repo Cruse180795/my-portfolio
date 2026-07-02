@@ -3,6 +3,9 @@ import ProjectSectionIcon from "../icons/ProjectSectionIcon";
 import ContactSectionIcon from "../icons/ContactSectionIcon";
 
 
+import MobileNavLink from "../ui/MobileNavLink";
+
+
 function Navigation() {
   return (
     <nav className="bg-base-100 text-base-content border-b-base-300 border-b p-4 ">
@@ -13,15 +16,15 @@ function Navigation() {
 
         {/** Mobile Menu */}
         <ul className="flex items-center gap-x-2.5">
-          <li>
-            <a href="#about" className="p-2 border rounded-button flex items-center bg-primary/30 border-primary"><AboutSectionIcon className="size-5"/></a>
-          </li>
-          <li>
-            <a href="#projects" className="p-2 border rounded-button flex items-center bg-neutral border-neutral"><ProjectSectionIcon className="size-5"/></a>
-          </li>
-          <li>
-            <a href="#contact" className="p-2 border rounded-button flex items-center bg-neutral border-neutral"><ContactSectionIcon className="size-5"/></a>
-          </li>
+          <MobileNavLink href="#about">
+            <AboutSectionIcon className="size-5"/>
+          </MobileNavLink>
+          <MobileNavLink href="#about">
+            <ProjectSectionIcon className="size-5"/>
+          </MobileNavLink>
+          <MobileNavLink href="#about">
+            <ContactSectionIcon className="size-5"/>
+          </MobileNavLink>
         </ul>
       </div>
     </nav>
