@@ -1,5 +1,6 @@
 
 import Navigation from "./components/layout/Navigation";
+import AboutMeSection from "./components/sections/AboutMeSection";
 import ContactMeSection from "./components/sections/ContactMeSection";
 import Footer from "./components/layout/Footer";
 
@@ -16,6 +17,7 @@ function App() {
       <Navigation githubLink={githubLink} linkedinLink={linkedinLink} />
 
       <main className="flex-1">
+        <AboutMeSection />
         <ContactMeSection mailto={mailtoLink}/>
       </main>
 
