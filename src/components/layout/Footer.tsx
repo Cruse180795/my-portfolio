@@ -36,10 +36,10 @@ function Footer({githubLink, linkedinLink}: FooterProps) {
             <p className="text-xs text-base-content/70">© 2026 Ryan Cruse. All rights reserved.</p>
             {/** Secondary contact paths */}
             <div className="flex items-center gap-x-2">
-              <a href={githubLink} className="p-1.5 rounded-button bg-github text-white border-2 border-github transition-all ease-in-out duration-500 hover:-translate-y-0.5" target="_blank" rel="noopener noreferrer">
+              <a href={githubLink} className="p-1.5 rounded-button bg-github text-white border-2 border-github transition-all ease-in-out duration-300 hover:-translate-y-0.5" target="_blank" rel="noopener noreferrer">
                 <GithubIcon className="size-5"/>
               </a>
-              <a href={linkedinLink} className="p-1.5 rounded-button bg-linkedin text-white border-2 border-linkedin transition-all ease-in-out duration-500 hover:-translate-y-0.5" target="_blank" rel="noopener noreferrer">
+              <a href={linkedinLink} className="p-1.5 rounded-button bg-linkedin text-white border-2 border-linkedin transition-all ease-in-out duration-300 hover:-translate-y-0.5" target="_blank" rel="noopener noreferrer">
                 <LinkedinIcon className="size-5"/>
               </a>
             </div>

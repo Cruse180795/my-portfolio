@@ -29,10 +29,10 @@ function ContactMeSection({ mailto }: ContactMeProps) {
             {/** Email */}
             <a
               href={`mailto:${mailto}`}
-              className="group border-2 border-l-4 border-l-primary border-primary/30 bg-base-100 rounded-card flex items-center justify-between p-2 transition-all ease-in-out duration-500 hover:border-accent">
+              className="group border-2 border-l-4 border-l-primary border-primary/30 bg-base-100 rounded-card flex items-center justify-between p-2 transition-all ease-in-out duration-300 hover:border-accent">
 
               <div className="flex items-center gap-x-4">
-                <div className="rounded-badge p-2 bg-primary/20 text-primary transition-all ease-in-out duration-500 group-hover:text-accent group-hover:bg-accent/20">
+                <div className="rounded-badge p-2 bg-primary/20 text-primary transition-all ease-in-out duration-300 group-hover:text-accent group-hover:bg-accent/20">
                   <ContactSectionIcon className="size-5" />
                 </div>
 
@@ -45,7 +45,7 @@ function ContactMeSection({ mailto }: ContactMeProps) {
               </div>
 
 
-              <div className="text-primary transition-all ease-in-out duration-500 group-hover:text-accent">
+              <div className="text-primary transition-all ease-in-out duration-300 group-hover:text-accent">
                 <RightArrowIcon className="size-4 " />
               </div>
             </a>

@@ -59,10 +59,10 @@ function Navigation({githubLink, linkedinLink}: NavigationProps) {
 
 
           <div className="lg:flex lg:items-center lg:gap-x-2.5">
-            <a href={githubLink} target="_blank" rel="noopener noreferrer" className="p-1.5 rounded-button bg-github border-2 border-github transition-all ease-in-out duration-500 hover:-translate-y-0.5">
+            <a href={githubLink} target="_blank" rel="noopener noreferrer" className="p-1.5 rounded-button bg-github border-2 border-github transition-all ease-in-out duration-300 hover:-translate-y-0.5">
               <GithubIcon className="size-5" />
             </a>
-            <a href={linkedinLink} target="_blank" rel="noopener noreferrer" className="p-1.5 rounded-button bg-linkedin border-2 border-linkedin transition-all ease-in-out duration-500 hover:-translate-y-0.5">
+            <a href={linkedinLink} target="_blank" rel="noopener noreferrer" className="p-1.5 rounded-button bg-linkedin border-2 border-linkedin transition-all ease-in-out duration-300 hover:-translate-y-0.5">
               <LinkedinIcon className="size-5" />
             </a>
           </div>
