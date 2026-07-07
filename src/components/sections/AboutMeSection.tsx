@@ -28,7 +28,7 @@ function AboutMeSection() {
             <header className="text-center space-y-2 lg:text-left lg:space-y-2.5">
               <div className="space-y-1.5">
                 <h2 className="text-3xl uppercase lg:text-4xl">Welcome</h2>
-                <h3 className="text-5xl ">I'm <span className="font-bold bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent underline underline-offset-8 decoration-1">Ryan Cruse</span></h3>
+                <h3 className="text-4xl lg:text-5xl">I'm <span className="font-bold bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent underline underline-offset-8 decoration-1">Ryan Cruse</span></h3>
               </div>
 
               <p className="leading-relaxed text-balance lg:text-lg ">Full-stack developer building web applications with React, Laravel and Tailwindcss.</p>
