@@ -12,14 +12,15 @@ const mailtoLink = "ryancruse1807@hotmail.com";
 const testProjects = [
   {
     id: 1,
-    name: 'Company Directory',
-    description: 'A update version of a IT Career Switch Project that allows users to create, edit and delete Locations, Departments and Employees.',
+    name: 'Test Project 1',
+    description: 'Test Project 1 description.',
     stack: ['React', 'Laravel', 'PostgreSQL', 'TailwindCSS'],
     image: 'https://placehold.co/600x400/000000/FFF',
     status: 'Completed',
     githubLink: '',
     liveLink: ''
-  }
+  },
+
 ]
 
 function App() {
