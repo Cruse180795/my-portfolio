@@ -1,0 +1,56 @@
+import ProjectCard from "../ui/ProjectCard";
+
+
+interface Project {
+  id: number;
+  name: string;
+  description: string;
+  stack: string[];
+  image: string;
+  status: string;
+  githubLink: string;
+  liveLink: string;
+}
+
+interface ProjectCardProps  {
+  projects: Project[];
+};
+
+
+
+
+function ProjectSection({projects}: ProjectCardProps) {
+  return (
+    <section className="bg-linear-to-t from-base-300 to-base-200 text-base-content">
+
+      {/** container */}
+      <div className="px-4 py-8 md:px-8 lg:px-12 max-w-7xl mx-auto">
+
+        {/** grid container */}
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:items-center lg:gap-8">
+
+          {/** Section Header */}
+          <header className="text-center space-y-2 lg:text-left">
+            <h2 className="uppercase text-2xl lg:text-3xl">What <span className="text-primary">I've Built</span></h2>
+            <p className="leading-relaxed text-pretty lg:text-lg ">A selection of full-stack applications built with React, Laravel and PostgreSQL.</p>
+          </header>
+
+
+
+          {/** Projects */}
+          <ul className="grid grid-cols-1 gap-4">
+            {projects.map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+  )
+}
+
+
+export default ProjectSection
