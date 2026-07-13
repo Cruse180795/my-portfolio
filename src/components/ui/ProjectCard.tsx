@@ -5,6 +5,7 @@ interface ProjectCardProps {
     stack: string[];
     image: string;
     status: string;
+    imageBg: string;
     githubLink: string;
     liveLink: string;
   };
@@ -21,7 +22,10 @@ function ProjectCard({ project }: ProjectCardProps) {
       <div className="relative">
         {/** Project Image */}
         <img src={project.image} alt={`${project.name} Project Screenshot`} className="rounded-image border-neutral shadow-md" loading="lazy" decoding="async" width={600} height={400}/>
-        <p className={`text-xs absolute bottom-2 right-2 rounded-badge p-2 bg-base-content/10 backdrop-blur-sm ${project.status === 'Completed' ? 'text-emerald-400' : 'text-accent'}`}>{ project.status}</p>
+        <p className={`text-xs absolute bottom-2 right-2 rounded-badge p-2
+          ${project.imageBg === 'Dark' ? 'bg-base-content/10 backdrop-blur-md' : 'bg-base-100/60'}
+          ${project.status === 'Completed' ? 'text-emerald-400' : 'text-accent'}
+          `}>{project.status}</p>
       </div>
 
       <div className="space-y-4">

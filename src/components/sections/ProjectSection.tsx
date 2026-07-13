@@ -8,6 +8,7 @@ interface Project {
   stack: string[];
   image: string;
   status: string;
+  imageBg: string;
   githubLink: string;
   liveLink: string;
 }

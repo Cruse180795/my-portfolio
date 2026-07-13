@@ -9,14 +9,19 @@ const githubLink = "https://github.com/Cruse180795";
 const linkedinLink = "https://www.linkedin.com/in/ryancruse1807/";
 const mailtoLink = "ryancruse1807@hotmail.com";
 
+
+// Project Image imports
+import NoteKeeperProjectImage from "./assets/images/NoteKeeper.webp"
+
 const testProjects = [
   {
     id: 1,
-    name: 'Test Project 1',
-    description: 'Test Project 1 description.',
+    name: 'NoteKeeper — Full-Stack Note-Taking App',
+    description: 'A responsive, full-stack note-taking application. Users can create, edit, delete, and archive notes, organize them with tags, and search across titles, tags, and content.',
     stack: ['React', 'Laravel', 'PostgreSQL', 'TailwindCSS'],
-    image: 'https://placehold.co/600x400/000000/FFF',
-    status: 'Completed',
+    image: NoteKeeperProjectImage,
+    status: 'In Development',
+    imageBg: 'Light',
     githubLink: '',
     liveLink: ''
   },
