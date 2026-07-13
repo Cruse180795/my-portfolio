@@ -9,15 +9,20 @@ import LinkedinIcon from "../icons/LinkedinIcon";
 import MobileNavLink from "../ui/MobileNavLink";
 import DesktopNavLink from "../ui/DesktopNavLink";
 
+
+
 type NavigationProps = {
   githubLink: string;
   linkedinLink: string;
 }
 
 
-function Navigation({githubLink, linkedinLink}: NavigationProps) {
+function Navigation({ githubLink, linkedinLink }: NavigationProps) {
+
+
+
   return (
-    <nav className="bg-base-300 text-base-content border-b-base-100 border-b ">
+    <nav className="bg-base-300 text-base-content border-b-base-100 border-b fixed w-full z-10">
       {/** container */}
       <div className="flex items-center justify-between px-4 py-4 md:px-8 lg:px-12 max-w-7xl mx-auto">
         {/** Brand */}
@@ -25,13 +30,13 @@ function Navigation({githubLink, linkedinLink}: NavigationProps) {
 
         {/** Mobile Menu */}
         <ul className="flex items-center gap-x-2.5 lg:hidden">
-          <MobileNavLink href="#about">
+          <MobileNavLink href="#about" >
             <AboutSectionIcon className="size-5"/>
           </MobileNavLink>
-          <MobileNavLink href="#about">
+          <MobileNavLink href="#project" >
             <ProjectSectionIcon className="size-5"/>
           </MobileNavLink>
-          <MobileNavLink href="#about">
+          <MobileNavLink href="#contact" >
             <ContactSectionIcon className="size-5"/>
           </MobileNavLink>
         </ul>
@@ -40,15 +45,15 @@ function Navigation({githubLink, linkedinLink}: NavigationProps) {
         {/** Desktop Menu and socials */}
         <div className="hidden lg:flex lg:items-center lg:gap-x-4">
           <ul className=" lg:flex lg:items-center lg:gap-x-2.5">
-            <DesktopNavLink href="#about">
+            <DesktopNavLink href="#about" >
               <AboutSectionIcon className="size-5" />
               <h2 className="border-l pl-2">About</h2>
             </DesktopNavLink>
-            <DesktopNavLink href="#about">
+            <DesktopNavLink href="#project" >
               <ProjectSectionIcon className="size-5" />
               <h2 className="border-l pl-2">Projects</h2>
             </DesktopNavLink>
-            <DesktopNavLink href="#about">
+            <DesktopNavLink href="#contact" >
               <ContactSectionIcon className="size-5" />
               <h2 className="border-l pl-2">Contact</h2>
             </DesktopNavLink>

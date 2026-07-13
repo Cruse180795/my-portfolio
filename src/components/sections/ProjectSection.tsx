@@ -21,7 +21,7 @@ interface ProjectCardProps  {
 
 function ProjectSection({projects}: ProjectCardProps) {
   return (
-    <section className="bg-base-200 text-base-content">
+    <section className="bg-base-200 text-base-content scroll-mt-14 lg:scroll-mt-18" id="project">
 
       {/** container */}
       <div className="px-4 py-8 md:px-8 lg:px-12 max-w-7xl mx-auto">

@@ -9,10 +9,10 @@ import AboutMeIllustration from "../../assets/images/About_me_illustration.webp"
 
 function AboutMeSection() {
   return (
-    <section className="bg-linear-to-b from-base-300 to-base-100 text-base-content">
+    <section className="bg-linear-to-b from-base-300 to-base-100 text-base-content scroll-mt-5 lg:scroll-mt-12" id="about">
 
       {/** container */}
-      <div className="px-4 py-8 md:px-8 lg:px-12 max-w-7xl mx-auto">
+      <div className="px-4 pt-20 pb-8 md:px-8 lg:px-12 lg:pt-30 lg:pb-12 max-w-7xl mx-auto">
 
         {/** grid container */}
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:items-center lg:gap-8">
