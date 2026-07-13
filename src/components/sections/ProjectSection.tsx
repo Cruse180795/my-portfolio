@@ -21,16 +21,16 @@ interface ProjectCardProps  {
 
 function ProjectSection({projects}: ProjectCardProps) {
   return (
-    <section className="bg-linear-to-t from-base-300 to-base-200 text-base-content">
+    <section className="bg-base-200 text-base-content">
 
       {/** container */}
       <div className="px-4 py-8 md:px-8 lg:px-12 max-w-7xl mx-auto">
 
         {/** grid container */}
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:items-center lg:gap-8">
+        <div className="grid grid-cols-1 gap-6 lg:gap-8">
 
           {/** Section Header */}
-          <header className="text-center space-y-2 lg:text-left">
+          <header className="text-center space-y-2">
             <h2 className="uppercase text-2xl lg:text-3xl">What <span className="text-primary">I've Built</span></h2>
             <p className="leading-relaxed text-pretty lg:text-lg ">A selection of full-stack applications built with React, Laravel and PostgreSQL.</p>
           </header>
@@ -38,7 +38,7 @@ function ProjectSection({projects}: ProjectCardProps) {
 
 
           {/** Projects */}
-          <ul className="grid grid-cols-1 gap-4">
+          <ul className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
             {projects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
